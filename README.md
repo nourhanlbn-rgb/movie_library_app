@@ -1,17 +1,21 @@
-# shopping_app
+Movie Library App
 
-A new Flutter project.
+A simple Flutter app that shows a collection of movies. You can search by title or genre and switch between a list view and a grid view.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Features
+Movie cards with a poster, rating, bookmark icon, release year, title and genre
+Switch between list view and grid view with one button
+Search by title or genre (not case-sensitive)
+"No movies found" message when nothing matches
+Bonus: tap the discount badge on any card and it changes on all cards
+Project Structure
+lib/
+  main.dart         -> MaterialApp + theme
+  home_page.dart    -> HomePage
+  movie_card.dart   -> MovieCard
+  movie.dart        -> Movie class + movies list
+assets/posters/     -> movie posters
+How to Run
+bash
+flutter pub get
+flutter run
